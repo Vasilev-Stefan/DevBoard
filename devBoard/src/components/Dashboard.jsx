@@ -1,3 +1,4 @@
+import ProjectCard from "./ProjectCard";
 import SmallContainers from "./SmallContainers";
 
 export default function Dashboard() {
@@ -14,30 +15,10 @@ export default function Dashboard() {
             <p className="text-gray-300 font-bold ml-2 mt-2 text-xl h-10 custom-outline uppercase mb-2">
               Projects
             </p>
-            {/* Card */}
-            <div className="h-20">
-                <p className="text-lg text-gray-300">Task 1</p>
-                <div className="flex justify-center">Tech used:</div>
-                <div className="border-b border-gray-500 w-100 ml-9 mt-2"></div>
-            </div>
-            {/* Card */}
-            <div className="h-20">
-                <p className="text-lg text-gray-300">Task 1</p>
-                <div className="flex justify-center">Tech used:</div>
-                <div className="border-b border-gray-500 w-100 ml-9 mt-2"></div>
-            </div>
-            {/* Card */}
-            <div className="h-20">
-                <p className="text-lg text-gray-300">Task 1</p>
-                <div className="flex justify-center">Tech used:</div>
-                <div className="border-b border-gray-500 w-100 ml-9 mt-2"></div>
-            </div>
-            {/* Card */}
-            <div className="h-20">
-                <p className="text-lg text-gray-300">Task 1</p>
-                <div className="flex justify-center">Tech used:</div>
-                <div className="border-b border-gray-500 w-100 ml-9 mt-2"></div>
-            </div>
+            <ProjectCard task={'Task 1'} tech={'React'} border={true} />
+            <ProjectCard task={'Task 2'} tech={'Tailwind'} border={true} />
+            <ProjectCard task={'Task 3'} tech={'React, Tailwind'} border={true} />
+            <ProjectCard task={'Task 4'} tech={'React, JS'} border={false} />
           </div>
         </div>
         <div className="grid-1 bg-gray-600 w-80 h-90 rounded-xl border border-gray-500">
